@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MAX/MIN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style>
+</style>
+</head>
+<body>
+	<div class="container-fluid bg-primary">
+		<div class="row">
+			<div class="col-sm-12 text-center mt-5">
+				<h1>MAX/MIN</h1><br>
+<h5>Element 1 :   <input type="text" name="" id="n1" value=""></h5><br>
+<h5>Element 2 :   <input type="text" name="" id="n2" value=""></h5><br>
+<h5>Element 3 :   <input type="text" name="" id="n3" value=""></h5><br>
+<h5>Element 4 :   <input type="text" name="" id="n4" value=""></h5><br>
+<h5>Element 5 :   <input type="text" name="" id="n5" value=""></h5><br>
+<button onclick="max()">Maximum</button>
+<button onclick="min()">Minimum</button><br><br>
+<h3 id="print">The Result is ....</h3>
+
+</div></div></div></body>
+<script>
+	
+function max(){
+	var n1 =Number(document.getElementById("n1").value)
+		var n2 =Number(document.getElementById("n2").value)
+			var n3 =Number(document.getElementById("n3").value)
+			var n4 =Number(document.getElementById("n4").value)
+			var n5 =Number(document.getElementById("n5").value)
+             var r=""
+			if (n1>=n2 && n1>=n3 && n1>=n4 && n1>=n5) {
+				r=n1;
+			}
+			if (n2>=n1 && n2>=n3 && n2>=n4 && n2>=n5) {
+			r=n2;
+			}
+			if (n3>n1 && n3>=n2 && n3>=n4 && n3>=n5) {
+				r=n3;
+			}
+						if (n4>=n1 && n4>=n2 && n4>=n3 && n4>=n5) {
+				r=n4;
+			}
+						if (n5>=n1 && n5>=n2 && n5>=n3 && n5>=n4) {
+				r=n5;
+			}
+				document.getElementById("print").innerHTML= r
+}
+
+function min(){
+	var n1 =Number(document.getElementById("n1").value)
+		var n2 =Number(document.getElementById("n2").value)
+			var n3 =Number(document.getElementById("n3").value)
+			var n4 =Number(document.getElementById("n4").value)
+			var n5 =Number(document.getElementById("n5").value)
+             var r=""
+			if (n1<=n2 && n1<=n3 && n1<=n4 && n1<=n5) {
+				r=n1;
+			}
+			if (n2<=n1 && n2<=n3 && n2<=n4 && n2<=n5) {
+			r=n2;
+			}
+			if (n3<=n1 && n3<=n2 && n3<=n4 && n3<=n5) {
+				r=n3;
+			}
+						if (n4<=n1 && n4<=n2 && n4<=n3 && n4<=n5) {
+				r=n4;
+			}
+						if (n5<=n1 && n5<=n2 && n5<=n3 && n5<=n4) {
+				r=n5;
+			}
+				document.getElementById("print").innerHTML= r
+}
+
+</script>
+</html>
